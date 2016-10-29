@@ -13,12 +13,14 @@ from twilio import twiml
 from twilio.rest import TwilioRestClient
 
 # Set environment variables
-os.environ["SLACK_WEBHOOK_SECRET"] = "MVJcsIsHGDncwxSgzDANXTxZ"
-os.environ["TWILIO_NUMBER"] = "+15128722479"
-os.environ["USER_NUMBER"] = "+19095364296"
-os.environ["SLACK_TOKEN"] = "xoxp-4905231067-97348321795-97400019440-776ebfd86973a3dd78a5fb60cc2b9426"
-os.environ["TWILIO_ACCOUNT_SID"] = "AC8c17488c62eefd798304f7ec903c98ec"
-os.environ["TWILIO_AUTH_TOKEN"] = "2056f9386c091ef8be39ea0615486961"
+if "TWL_SLK_FLAG" not in os.environ or os.environ["TWL_SLK_FLAG"] != "1":
+	os.environ["TWL_SLK_FLAG"] = "1"
+	os.environ["SLACK_WEBHOOK_SECRET"] = input("Enter your Slack webhook:\t")
+	os.environ["TWILIO_NUMBER"] = input("Enter your Twilio number:\t")
+	os.environ["USER_NUMBER"] = input("Enter the user's number:\t")
+	os.environ["SLACK_TOKEN"] = input("Enter your Slack account token:\t")
+	os.environ["TWILIO_ACCOUNT_SID"] = input("Enter your Twilio account SID:\t")
+	os.environ["TWILIO_AUTH_TOKEN"] = input("Enter your Twilio auth token:\t")
 
 # Get environment variables for Twilio and user number
 SLACK_WEBHOOK_SECRET = os.environ.get('SLACK_WEBHOOK_SECRET', None)

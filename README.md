@@ -16,7 +16,7 @@ link to referenced tutorial: https://www.twilio.com/blog/2016/05/build-sms-slack
 
 4. Copy https Forwarding URL.
 
-5. Go to 'https://dev4slack.com/services/97863173554'.
+5. Go to 'https://dev4slack.slack.com/services/97863173554'.
 
 6. In URL(s), paste '{https Forwarding URL}/slack'.
 
