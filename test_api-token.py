@@ -1,3 +1,9 @@
+#--------------------------------------------------------------------------------
+# Use to test whether slack client is connected.
+# Run 'export SLACK_TOKEN={your slack token}'.
+# Then, run 'python test_api-token'.
+#--------------------------------------------------------------------------------
+
 import os
 from slackclient import SlackClient
 
