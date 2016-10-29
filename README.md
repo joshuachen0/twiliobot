@@ -6,7 +6,13 @@ link to referenced tutorial: https://www.twilio.com/blog/2016/05/build-sms-slack
 
 
 
-SETUP: Run 'ngrok http 5000' in terminal.
+SETUP:
+
+Setup virtulenv and run 'pip install -r requirements.txt' to install required packages in secure environment.
+
+Download and unzip ngrok. Run 'mv ngrok /usr/local/bin' to run ngrok directly from command line.
+
+Run 'ngrok http 5000' in terminal.
 
 Copy https Forwarding URL.
 
@@ -20,10 +26,14 @@ Under Messaging/A MESSAGE COMES IN, paste '{https Forwarding URL}/twilio'.
 
 
 
-RUN: Run 'python twiliobot.py' in terminal.
+RUN: 
+
+Run 'python twiliobot.py' in terminal.
 
 
 
-EXIT: CTRL-C to exit twiliobot Flask app.
+EXIT: 
+
+CTRL-C to exit twiliobot Flask app.
 
 CTRL-C to exit ngrok.
