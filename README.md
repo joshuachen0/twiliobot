@@ -1,8 +1,8 @@
-# twiliobot
+# TwilioBot
 
-a bot made with Twilio to handle SMS<->Slack messages.
+A bot made with Twilio to handle SMS<->Slack messages.
 
-link to referenced tutorial: https://www.twilio.com/blog/2016/05/build-sms-slack-bot-python.html.
+Link to referenced tutorial: https://www.twilio.com/blog/2016/05/build-sms-slack-bot-python.html.
 
 
 
