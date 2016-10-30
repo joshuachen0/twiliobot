@@ -8,7 +8,7 @@ Link to referenced tutorial: https://www.twilio.com/blog/2016/05/build-sms-slack
 
 ### SETUP:
 
-1. Setup virtulenv and run 'pip install -r requirements.txt' to install required packages in secure environment.
+1. Setup virtualenv and run 'pip install -r requirements.txt' to install required packages in secure environment.
 
 2. Download and unzip ngrok. Run 'mv ngrok /usr/local/bin' to run ngrok directly from command line.
 
